@@ -1552,10 +1552,10 @@
   dependencies:
     color "^3.1.3"
 
-"@pxblue/react-native-themes@6.0.0-alpha.1":
-  version "6.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@pxblue/react-native-themes/-/react-native-themes-6.0.0-alpha.1.tgz#c41c085028d0ccd1b3e864e1a9696fdfc5058385"
-  integrity sha512-mycBbWYZVuvOr04iQaz76pPuMPElBt9/bIflDX1GL/IYfcmMtaLknqNfxlJMwxrbUSsIEFUrLLHRdCbarGzkpQ==
+"@pxblue/react-native-themes@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/react-native-themes/-/react-native-themes-6.0.0.tgz#9225efcaa972b60d5c60b6ca2707f4d850d13a83"
+  integrity sha512-dlVIhRI7uqLDtjYIn73lGuwZj7Tl4mIjWrsbZ43HB9qEU/5PZJvQla90n4oZz40ZsdLRCFY0YVKqFEn2xu+JLQ==
   dependencies:
     "@pxblue/colors" "^3.0.0"
     color "^3.1.3"
