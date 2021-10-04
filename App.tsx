@@ -108,21 +108,19 @@ export const App: React.FC<AppProps> = ({ navigation }) => {
                     <HeroBanner>
                         <Hero
                             label={'Healthy'}
-                            value={96}
-                            units={'/100'}
+                            ChannelValueProps={{ value: 96, units: '/100', unitSpace: 'hide', fontSize: 20 }}
                             icon={A}
-                            fontSize={20}
                             iconColor={theme.dark ? PXBColors.green[200] : PXBColors.green[500]}
                         />
                         <Hero
                             label={'Battery'}
-                            value={'Full'}
+                            ChannelValueProps={{ value: 'Full' }}
                             icon={Battery}
                             iconColor={theme.dark ? PXBColors.blue[200] : PXBColors.blue[500]}
                         />
                         <Hero label={'Estimated'} icon={Clock} iconColor={PXBColors.gray[500]}>
                             <ChannelValue fontSize={20} value={1} units={'h'} />
-                            <ChannelValue fontSize={20} value={37} units={'m'} />
+                            <ChannelValue fontSize={20} value={37} units={'m'} style={{ marginLeft: 4 }} />
                         </Hero>
                         <Hero
                             label={'Loaded'}
@@ -133,7 +131,7 @@ export const App: React.FC<AppProps> = ({ navigation }) => {
                         </Hero>
                         <Hero
                             label={'Not Shown'}
-                            value={'5th Item'}
+                            ChannelValueProps={{ value: '5th Item' }}
                             icon={Battery}
                             iconColor={theme.dark ? PXBColors.blue[200] : PXBColors.blue[500]}
                         />
@@ -157,7 +155,7 @@ export const App: React.FC<AppProps> = ({ navigation }) => {
                         rightComponent={
                             <React.Fragment>
                                 <ChannelValue value={1} units={'h'} icon={Clock} />
-                                <ChannelValue value={24} units={'m'} />
+                                <ChannelValue value={24} units={'m'} style={{ marginLeft: 4 }} />
                             </React.Fragment>
                         }
                     />
@@ -221,8 +219,7 @@ export const App: React.FC<AppProps> = ({ navigation }) => {
                                 label={'Score'}
                                 iconSize={48}
                                 iconColor={theme.dark ? PXBColors.green[200] : PXBColors.green[500]}
-                                value={98}
-                                units={'/100'}
+                                ChannelValueProps={{ value: 98, units: '/100', unitSpace: 'hide' }}
                                 icon={A}
                             />
                         </HeroBanner>
@@ -279,13 +276,17 @@ export const App: React.FC<AppProps> = ({ navigation }) => {
                     ]}
                     badge={
                         <HeroBanner style={{ flex: 0, minWidth: 180, justifyContent: 'flex-end' }}>
-                            <Hero label={'Temperature'} iconSize={70} value={69} units={'°F'} icon={Temp} />
+                            <Hero
+                                label={'Temperature'}
+                                iconSize={70}
+                                ChannelValueProps={{ value: 69, units: '°F' }}
+                                icon={Temp}
+                            />
                             <Hero
                                 label={'Humidity'}
                                 iconSize={70}
                                 iconColor={PXBColors.blue[200]}
-                                value={78}
-                                units={'%'}
+                                ChannelValueProps={{ value: 78, units: '%' }}
                                 icon={Humidity}
                             />
                         </HeroBanner>

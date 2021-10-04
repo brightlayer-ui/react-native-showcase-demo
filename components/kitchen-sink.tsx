@@ -880,6 +880,7 @@ export const KitchenSink: React.FC = (): JSX.Element => {
                                 marginTop: 24,
                                 width: 250,
                             }}
+                            onClose={(): void => {}}
                         >
                             Selected Outlined Chip
                         </ThemedChip>
