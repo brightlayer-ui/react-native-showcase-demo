@@ -9,6 +9,7 @@ import { Provider as PaperProvider } from 'react-native-paper';
 import React, { useState } from 'react';
 import { ThemeContext, ThemeType } from './contexts/ThemeContext';
 import { blue, blueDark } from '@brightlayer-ui/react-native-themes';
+import { FontScaleContext } from '@brightlayer-ui/react-native-components';
 
 const wrapper = (): JSX.Element => {
     const [theme, setTheme] = useState<ThemeType>('light');
@@ -16,7 +17,9 @@ const wrapper = (): JSX.Element => {
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>
             <PaperProvider theme={theme === 'light' ? blue : blueDark}>
-                <MainRouter />
+                <FontScaleContext.Provider value={{ maxFontScale: 1.3, disableFontScaling: true }}>
+                    <MainRouter />
+                </FontScaleContext.Provider>
             </PaperProvider>
         </ThemeContext.Provider>
     );
