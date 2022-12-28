@@ -142,6 +142,7 @@ export const App: React.FC<AppProps> = ({ navigation }) => {
                         divider={'full'}
                         icon={Sunny}
                         title={'Temperature'}
+                        chevron
                         rightComponent={<ChannelValue value={68} units={'°F'} />}
                     />
                     <InfoListItem
