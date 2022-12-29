@@ -1,3 +1,5 @@
+> This repo has been archived and moved [here](https://github.com/etn-ccis/blui-react-native-showcase-demo).
+
 # React Native Showcase Demo
 
 [![](https://img.shields.io/circleci/project/github/brightlayer-ui/react-native-showcase-demo/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-native-showcase-demo/tree/master) [![codecov](https://codecov.io/gh/brightlayer-ui/react-native-showcase-demo/branch/master/graph/badge.svg?token=6KBS9UWAXP)](https://codecov.io/gh/brightlayer-ui/react-native-showcase-demo)
